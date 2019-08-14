@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<title>Atomic Design</title>
+	<link rel="shortcut icon" href="./img/favicon.ico" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<!--FONTAWESOME-->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+	<!--NAVBAR-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="landing.html"><img src="img/logo.png"></a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class=""><a href="atomos.html">Átomos</a></li>
+					<li class=""><a href="organismos.html">Organismos</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--CONTENDOR-->
+	<div class="contenedor">
+		<!--ATOMOS-->
+		<div class="elemento mt-100">
+			<h1 class="titulos-grandes">Átomos</h1>
+		</div>
+
+		<!--PALETADECOLORES-->
+		<div class="elemento">
+			<!---INICIODOCUMENTACIONPALETADECOLORES-->
+			<h1 class="titulos patt">Colores <span id="g1" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h1>
+			<div id="grupo1" class="descripcion-elemento clearfix">
+				<div class="col-sm-6">
+					Se presenta la paleta de color.
+				</div>
+				<div class="col-sm-6">
+					<p class="edt">Elemento</p>
+					<xmp class="edc">
+						<!-- Tarjeta del Color -->
+						<div class="tarjeta black">
+							<div class="tarjeta-bg"></div>
+							<footer>
+								<span class="color-name">Color</span>
+								<span class="color-value">#hex</span>
+							</footer>
+						</div>
+					</xmp>
+				</div>
+			</div>
+			<!---FINDOCUMENTACIONPALETADECOLORES-->
+
+			<hr class="style1">
+
+			<!---PALETADECOLORES-->
+			<p class="subtitulos">Paleta de Colores</p>
+			<div class="flex-item">
+				<!---TARJETABLACK-->
+				<div class="tarjeta black">
+					<div class="tarjeta-bg"></div>
+					<footer>
+						<span class="color-name">Black</span>
+						<span class="color-value">#000000</span>
+					</footer>
+				</div>
+				<!---TARJETASLATEGREY-->
+				<div class="tarjeta Slate-Grey">
+					<div class="tarjeta-bg"></div>
+					<footer>
+						<span class="color-name">Slate-Grey</span>
+						<span class="color-value">#5a5b5e</span>
+					</footer>
+				</div>
+				<!---TARJETAGREYISH-->
+				<div class="tarjeta Greyish">
+					<div class="tarjeta-bg"></div>
+					<footer>
+						<span class="color-name">Greyish</span>
+						<span class="color-value">#a5a5a5</span>
+					</footer>
+				</div>
+				<!---TARJETAGREY-->
+				<div class="tarjeta Grey">
+					<div class="tarjeta-bg"></div>
+					<footer>
+						<span class="color-name">Grey</span>
+						<span class="color-value">#e6e6e6</span>
+					</footer>
+				</div>
+				<!---TARJETAWHITE-->
+				<div class="tarjeta White">
+					<div class="tarjeta-bg"></div>
+					<footer>
+						<span class="color-name">White</span>
+						<span class="color-value">#ffffff</span>
+					</footer>
+				</div>
+				<!---TARJETABRIGHTBLUE-->
+				<div class="tarjeta Bright-Blue">
+					<div class="tarjeta-bg"></div>
+					<footer>
+						<span class="color-name">Bright-Blue</span>
+						<span class="color-value">#00C4E2</span>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		<!--BOTONES-->
+		<div class="elemento">
+			<h1 class="titulos patt">Botones<span id="g2" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h1>
+			<!--INICIODOCUMENTACIONBOTONES-->
+			<div id="grupo2" class="descripcion-elemento clearfix">
+				<div class="col-sm-6">
+					Los botones están compuestos por diferentes tipos:
+					<br>-Botones de Selección
+					<br>-Botones de Texto
+					<br>-Botones Radiales
+					<br>-Botones CheckBox
+				</div>
+				<div class="col-sm-6">
+					<p class="edt">Elemento</p>
+					<xmp class="edc">
+						<!--BOTON1-->
+						<button class="boton-1">Boton 1</button>
+						<!--BOTONTEXTO-->
+						<a class="boton-texto" href="#">Boton Texto<i class="fas fa-angle-right" style="margin-left:10px;"></i></a>
+						<!--BOTONRADIAL-->
+						<label class="container">Elemento 1
+							<input type="radio" checked="checked" name="radio">
+							<span class="checkmark"></span>
+						</label>
+						<!--BOTONCHECKBOX-->
+						<label class="container">Elemento 1
+							<input type="checkbox">
+							<span class="checkbutton"></span>
+						</label>
+					</xmp>
+				</div>
+			</div>
+			<!--FINDOCUMENTACIONBOTONES-->
+
+			<hr class="style1">
+
+			<!--BOTONES1-->
+			<p class="subtitulos">Botones</p>
+			<button class="boton-1">Boton 1</button>
+			<button class="boton-2">Boton 2</button>
+			<button class="boton-3">Boton 3</button>
+			<button class="boton-4">Boton 4</button>
+			<!--BOTONESTEXTO-->
+			<p class="subtitulos">Botones Texto</p>
+			<hr class="style1">
+			<a class="boton-texto" href="#">Boton Texto<i class="fas fa-angle-right" style="margin-left:10px;"></i></a>
+			<!--BOTONESRADIALES-->
+			<p class="subtitulos">Botones Radio</p>
+			<hr class="style1">
+			<label class="container">Elemento 1
+				<input type="radio" checked="checked" name="radio">
+				<span class="checkmark"></span>
+			</label>
+			<label class="container">Elemento 2
+				<input type="radio" name="radio">
+				<span class="checkmark"></span>
+			</label>
+			<!--BOTONESCHECKBOX-->
+			<p class="subtitulos">Botones CheckBox</p>
+			<hr class="style1">
+			<label class="container">Elemento 1
+				<input type="checkbox">
+				<span class="checkbutton"></span>
+			</label>
+			<label class="container">Elemento 2
+				<input type="checkbox">
+				<span class="checkbutton"></span>
+			</label>
+		</div>
+
+		<!--FORMS-->
+		<div class="elemento">
+			<!--INICIODOCUMENTACIONFORMS-->
+			<h1 class="titulos patt">Forms<span id="g3" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h1>
+			<div id="grupo3" class="descripcion-elemento clearfix">
+				<div class="col-sm-6">
+					Los forms se presentan de acuerdo al tipo de entrada en campos de texto.
+				</div>
+				<div class="col-sm-6">
+					<p class="edt">Elemento</p>
+					<xmp class="edc">
+						<!--INPUTTEXTO-->
+						<form action="">
+							Item: <input type="text" name="firstname">
+						</form>
+						<!--AREATEXTO-->
+						<textarea rows="4" cols="50"></textarea>
+					</xmp>
+				</div>
+			</div>
+			<!--FINDOCUMENTACIONFORMS-->
+
+			<hr class="style1">
+
+			<!--INPUTTEXTO-->
+			<p class="subtitulos">Entrada de Texto</p>
+			<div class="margen-izquierdo">
+				<form action="">
+					Item: <input type="text" name="firstname">
+				</form>
+			</div>
+			<!--AREATEXTO-->
+			<p class="subtitulos">Área de Texto</p>
+			<hr class="style1">
+			<textarea rows="4" cols="50"></textarea>
+		</div>
+
+		<!--LINES-->
+		<div class="elemento">
+			<h1 class="titulos patt">Lines<span id="g4" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h1>
+			<!--INICIODOCUMENTACIONLINES-->
+			<div id="grupo4" class="descripcion-elemento clearfix">
+				<div class="col-sm-6">
+					Se presentan los diferentes tipos de divisores.
+				</div>
+				<div class="col-sm-6">
+					<p class="edt">Elemento</p>
+					<xmp class="edc">
+						<!--LINESTYLE1-->
+						<hr class="style1">
+						<!--LINESTYLE2-->
+						<hr class="style2">
+					</xmp>
+				</div>
+			</div>
+			<!--INICIODOCUMENTACIONLINES-->
+
+			<!--LINESTYLE1-->
+			<p class="subtitulos">Line 1</p>
+			<hr class="style1">
+			<!--LINESTYLE2-->
+			<p class="subtitulos">Line 2</p>
+			<hr class="style2">
+		</div>
+
+		<!--TITULOS-->
+		<div class="elemento">
+			<!--INICIODOCUMENTACIONTITULOS-->
+			<h1 class="titulos patt">Títulos <span id="g5" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h1>
+			<div id="grupo5" class="descripcion-elemento clearfix">
+				<div class="col-sm-6">
+					Los Títulos se presentan en base a la relación al "Rem base de 16PX".
+				</div>
+				<div class="col-sm-6">
+					<p class="edt">Elemento</p>
+					<xmp class="edc">
+						<!--TITULOS-->
+						<div class="margen">
+							<h1>h1 lorem ipsum dolor sit amet consectetur adipiscing elit</h1>
+							<h2>h2 lorem ipsum dolor sit amet consectetur adipiscing elit</h2>
+							<h3>h3 lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+							<h4>h4 lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+							<h5>h5 lorem ipsum dolor sit amet consectetur adipiscing elit</h5>
+							<h6>h6 lorem ipsum dolor sit amet consectetur adipiscing elit</h6>
+						</div>
+					</xmp>
+				</div>
+			</div>
+			<!--FINDOCUMENTACIONTITULOS-->
+
+			<hr class="style1">
+
+			<!--TITULOS-->
+			<div class="margen">
+				<h1>h1 lorem ipsum dolor sit amet consectetur adipiscing elit</h1>
+				<h2>h2 lorem ipsum dolor sit amet consectetur adipiscing elit</h2>
+				<h3>h3 lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+				<h4>h4 lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+				<h5>h5 lorem ipsum dolor sit amet consectetur adipiscing elit</h5>
+				<h6>h6 lorem ipsum dolor sit amet consectetur adipiscing elit</h6>
+			</div>
+		</div>
+
+		<!--PARRAFOS-->
+		<div class="elemento">
+			<!--INICIODOCUMENTACIONPARRAFOS-->
+			<h1 class="titulos patt">Parráfos <span id="g6" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h1>
+			<div id="grupo6" class="descripcion-elemento clearfix">
+				<div class="col-sm-6">
+					Los Párrafos se presentan en base a la relación al "Rem base de 10PX".
+					<br>html{ font-size=62.5%; }
+					<br>10px = 1rem (base)
+					<br>12px = 1.2rem
+					<br>14px = 1.4rem
+					<br>16px = 1.6rem
+					<br>18px = 1.8rem
+					<br>20px = 2.0rem
+					<br>24px = 2.4rem
+					<br>30px = 3.0rem
+					<br>32px = 3.2rem
+				</div>
+				<div class="col-sm-6">
+					<p class="edt">Elemento</p>
+					<xmp class="edc">
+						<!--PARRAFOS-->
+						<div class="margen">
+							<p class="font10">font10 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+							<p class="font12">font12 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+							<p class="font14">font14 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+							<p class="font16">font16 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+							<p class="font18">font18 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+							<p class="font20">font20 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+							<p class="font24">font24 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+							<p class="font30">font30 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+							<p class="font32">font32 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+						</div>
+					</xmp>
+				</div>
+			</div>
+			<!--INICIODOCUMENTACIONPARRAFOS-->
+
+			<hr class="style1">
+			<!--PARRAFOS-->
+			<div class="margen">
+				<p class="font10">font10 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+				<p class="font12">font12 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+				<p class="font14">font14 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+				<p class="font16">font16 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+				<p class="font18">font18 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+				<p class="font20">font20 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+				<p class="font24">font24 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+				<p class="font30">font30 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+				<p class="font32">font32 lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+			</div>
+		</div>
+
+		<!--IMAGENES-->
+		<div class="elemento">
+			<!--INICIODOCUMENTACIONIMAGENES-->
+			<h1 class="titulos patt">Imágenes <span id="g7" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></h1>
+			<div id="grupo7" class="descripcion-elemento clearfix">
+				<div class="col-sm-6">
+					Las imágenes se muestran en relación a su uso dentro de la construcción de elementos para jerarquizar los productos.
+				</div>
+				<div class="col-sm-6">
+					<p class="edt">Elemento</p>
+					<xmp class="edc">
+						<!--IMAGENLOGO-->
+						<div class="margen">
+							<img class="imagen-logo" src="./img/logo.png" alt="Imagen Logo" />
+						</div>
+						<!--IMAGENARTICULO-->
+						<div class="margen-izquierdo">
+							<div class="img-1"><img src="./img/1.png"></div>
+						</div>
+						<!--IMAGENLANDSCAPE-->
+						<div class="col-xs-12 col-sm-6">
+							<div class="margen-izquierdo">
+								<div class="img-landscape"><img src="./img/landscape.png"></div>
+							</div>
+						</div>
+						<!--IMAGENBANNER-->
+						<div class="margen-izquierdo">
+							<img class="imagen-banner" src="./img/banner.png" alt="Imagen Banner" />
+						</div>
+
+					</xmp>
+				</div>
+			</div>
+			<!--FINDOCUMENTACIONIMAGENES-->
+
+			<hr class="style1">
+
+			<!--IMAGENLOGO-->
+			<p class="subtitulos">Imagen Logo</p>
+			<hr class="style1">
+			<div class="margen-izquierdo">
+				<img class="imagen-logo" src="./img/logo.png" alt="Imagen Logo" />
+			</div>
+			<!--IMAGENARTICULO-->
+			<p class="subtitulos">Imagen Artículo</p>
+			<hr class="style1">
+			<div class="margen-izquierdo">
+				<div class="img-1"><img src="./img/1.png"></div>
+			</div>
+
+			<!--IMAGENLANDSCAPE-->
+			<p class="subtitulos">Imagen Landscape</p>
+			<hr class="style1">
+			<div class="margen-izquierdo">
+				<div class="img-landscape"><img src="./img/landscape.png"></div>
+			</div>
+
+			<!--IMAGENBANNER-->
+			<p class="subtitulos">Imagen Banner</p>
+			<hr class="style1">
+			<div class="margen-izquierdo">
+				<img class="imagen-hero" src="./img/banner.png" alt="Imagen Banner" />
+			</div>
+
+		</div>
+	</div>
+
+	<!--JS-->
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+	<!--JSDOCUMENTACION-->
+	<script>
+		$(".titulos.patt > span").click(function() {
+			$(this).toggleClass("glyphicon-menu-down");
+			$(this).toggleClass("glyphicon-menu-up");
+			var id = $(this).attr('id');
+			var indice = id.substr(1, );
+			var selector = "#grupo" + indice;
+			$(selector).toggle("slow");
+		});
+	</script>
+
+</body>
+</html>
